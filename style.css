@@ -1,0 +1,750 @@
+
+*{
+
+
+  font-family: 'Poppins', sans-serif;
+
+} 
+body{
+   
+    margin:0px 2%;
+   
+   }
+/* ----------Content--------------- */
+.icon-number{
+  width: 49px;
+height: 43px;
+margin-left: 78px;
+color: #fff;
+background: #D4AC0D ;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 29px;
+font-weight: 700;
+transition: 1s;
+border-radius: 50px;
+}
+.box p{
+  margin:0px
+}
+.box h2{
+  font-size: 20px;
+}
+.content{
+
+background-repeat: no-repeat;
+padding-bottom: 313px;
+width: 102%;
+background-image: url(./img/Capture.PNG);
+background-size: cover;
+padding-top: 10px;
+padding-left: 42px;
+
+padding-top: 66px;
+}
+
+.livraison{
+  width: 173px;
+    height: 63px;
+    margin-top: 55px;
+    margin-left: 39px;
+    padding-bottom: 108px;
+
+    background-size: cover;
+
+
+  background-image: url(./img/avantage.webp);
+}
+.livraison h5{
+  text-align: center;
+  padding-top: 39px;
+}
+
+/* -------Ligne------------- */
+.ligne{
+  width: 354px;
+        margin-right: 154px;
+        border: solid 1px;
+    margin-top: -12px;
+
+        color:#D4AC0D ;
+}
+.advantage{
+  width: 200px;
+}
+
+/*------------------- Tittle----------------- */
+.agence{width: 30%;
+}
+.image{
+  width: 70%;
+}
+.tittre{
+  margin-top: 76px;
+  text-transform: uppercase;
+}
+
+/*------------------------ Navbar------------ */
+.navbar{
+  display: flex;
+  height: 80px;
+  width: 89%;
+  margin-top: -38px;
+  background: #1b1b1b;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+    nav{
+  display: flex;
+  height: 80px;
+  width: 89%;
+  margin-top: -7px;
+  background: #1b1b1b;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  width: 129px;
+    height: 53px;
+  border-radius: 120px;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+/*----------------  Media Navbar  ----------------*/
+
+ 
+@media (max-width: 920px) {
+  nav{
+    padding: 0 60px 0 15px;
+  }
+  nav .menu-btn i{
+    display: block;
+  }
+ 
+  nav ul{
+    position: fixed;
+    top: 50px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  
+  nav ul li a:hover{
+    background: none;
+    color: #f9a526;  ;
+  }
+}
+/*----------Media phone 575 ------------- */
+@media (max-width:575px){
+  nav{
+    padding: 0 60px 0 15px;
+  }
+  nav .menu-btn i{
+    display: block;
+  }
+ 
+  nav ul{
+    position: fixed;
+    top: 50px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+   
+    right: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 20px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  
+  nav ul li a:hover{
+    background: none;
+    color: #f9a526;  ;
+  }
+
+} 
+
+
+/*---- Media Box 575---- */
+
+@media(max-width:575px){
+
+
+  .agence{width: 100%;
+  }
+  .livraison{
+    padding-left: 30px;
+  }
+  .tittre{
+    margin-top: 206px;
+   text-align: center;
+    text-transform: uppercase;
+    padding-left: 30px;
+  }
+  .agence h3{
+    text-align: center;
+  }
+
+}
+/*-----Card Media Queries------------- */
+@media (max-width:800px){
+  .box{
+    width: 200px;
+  }
+  .box h2{
+    font-size: 17px;
+  }
+  .box p{
+    font-size: 15px;
+  }
+}
+ 
+/*------Media présentation ---- */
+@media (max-width:575px){
+
+  .présentation{
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .présentation h1{
+    padding-right: 294px;
+
+
+  }
+
+  .image-pré{
+    width: 100%;
+  }
+  /*
+  .propos h1{
+    font-size: 22px;
+   padding-right: 30px;
+    text-align: center;
+  } */
+  .propos p{
+    font-size: 10px;
+  }
+  .propos {
+    width: 100%;
+  }
+  
+}
+
+
+/*--------------MEDIA Box 575------------ */
+
+
+
+@media (max-width:575px){
+
+  .choix{
+    display: flex;
+    flex-wrap: wrap;
+  }
+.box{
+  width: 50%;
+height: 50%;
+ 
+
+}
+.box p{
+  font-size: 15px;
+}
+
+
+}
+/* ------------Choix-------------- */
+.choix{
+  display: flex;
+  justify-content: space-around;
+  margin-left: 77px;
+  margin-right: 75px;
+  text-align: center;
+ color: black;
+ 
+}
+.box{
+  width: 335px;
+  padding: 19px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0,.1);
+  border-radius: 30px;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 297px;
+  margin-bottom: 36px;
+  
+
+}
+.box .box-item{
+  display: flex;
+}
+.box p{
+  color:gray;
+}
+.box p:hover{
+  color: #000f;
+}
+
+.title{
+  font-size: 33px;
+  text-align: center;
+  color: #f9a526;
+}
+.icon{
+ 
+  font-size: 28px;
+    padding-right: 17px;
+    padding-top: 14px;
+    color: gray;
+}
+.box:hover{
+    
+    opacity: 1.5;
+    color: black;
+    border-radius: 47px;
+    transition: .5s ease;
+    box-shadow: 0px 7px 10px #aaaa;
+   transform: translateX(-15px )
+
+}
+/* ------------Media query choix------------ */
+/* @media  (max-width:768px){
+   .box {
+  width: 50%;
+  
+
+  }
+.box{color:yellow}
+} */
+/* ---------Présentation--------------------- */
+.présentation{
+  display: flex;
+  background-color: #E5E0E0;
+}
+.image-pré{
+  width: 100%;
+}
+.propos{
+  width: 867px;
+}
+.présentation h2{
+  text-align: center;
+}
+.présentation p{
+  padding-left: 10px;
+    line-height: 28px;
+    color: #54595f;
+    text-align: justify;
+}
+.présentation h1{
+  font-size: 32px;
+    color: #f9a526;
+    text-align: center;
+}
+.image-pré:hover{
+  transform: translateY(-3px);
+}
+/* --------------------atous------------------- */
+.nos-atouts{
+  font-size: 31px;
+text-align: center;
+color: #f9a526;
+margin-bottom: 38px;
+margin-top: 61px;
+}
+.atouts{
+  display: flex;
+  justify-content: space-around;
+}
+.humaine{
+  display: flex;
+}
+.icon-atouts{
+  font-size: 27px;
+    padding-right: 24px;
+    padding-top: 16px;
+   
+    color: #D4AC0D;
+}
+/*--------------------------- Catégorie------------------------- */
+  .container{
+    position: relative;
+    width: 1010px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 47px;
+  }
+  .container .card{
+    position: relative;
+height: 261px;
+background: #fff;
+display: flex;
+width: 23%;
+
+margin: 32px 0;
+  }
+  .container .card .imgBx{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    transition: 0.5 ease-in-out;
+    overflow: hidden;
+  }
+  .type-voiture{
+    width: 242px;
+    align-items: center;
+    height: 262px;
+  }
+  .container .card:hover .imgBx{
+    width: 50px;
+    height: 10px;
+    left:-75px;
+    
+    top:calc(50%, 75PX);
+    transition: 0.5 ease-in-out;
+    background:  #D4AC0D;;
+    
+  }
+  .container .card .imgBx:before{
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 6em;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+  }
+  .container .card .imgBx img{
+   
+    transition: 0.5s ease-in-out;
+  }
+  /* .container .card:hover .imgBx img{
+    max-width: 75px;
+  } */
+  .container .card .contentt{
+    position: absolute;
+    right: 0;
+    
+    width: calc(115% - 57%);
+    height: 104%;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.container .card .contentt h4{
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #566573 ;
+}
+/* .container .card .contentt  button a{
+  display:inline-block;
+  margin-top:10px;
+  padding:5px 10px;
+  background: #333;
+  text-decoration: none;
+  color: #fff;
+
+} */
+.container .card .contentt  a{
+  position: relative;
+    display: inline-block;
+    padding: 8px 11px;
+    color: black;
+    font-size: 21px;
+    text-decoration: none;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    font-weight: bold;
+
+}
+
+
+.lien-réserver:hover{
+  background: #EB984E;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 0px 7px 10px #aaaa;
+}
+a span{
+  position: absolute;
+  display: block;
+
+}
+a span{
+  top: 60px;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,transparent,#D4AC0D);
+  animation: animate1 1s linear infinite;
+
+}
+@keyframes animate1{
+  
+  50%,100%{
+    left: 39%;
+  }
+}
+/* -----------------Reservation------------------- */
+.box-titre{
+  text-align: center;
+}
+.box-titre h1{
+  color: #EB984E;
+  font-size: 34px;
+  
+  padding-top: 58px;
+}
+
+.group-véhicule{
+  width: 45%;
+float: right;
+padding-top: 48px;
+}
+
+
+.form-reservation{
+  padding-left: 46px;
+  margin-left: 672px;
+  background: #F4F6F6;
+  margin-top: -340px;
+  border: 2px solid #FDEBD0;
+  border-radius: 20px;
+  
+}
+.arrow{
+  font-size: 40px;
+  
+  margin-top: 196px;
+  color: white;
+  }
+.key{
+  width: 38%;
+  height: 321px;
+    padding-top: 143px;
+}
+/* -------form by me------------- */
+form input{
+  
+    width: 186px;
+    margin-top: 13px;
+    height: 21px;
+    margin-bottom: 10px;
+    background-color:#F4F6F6 ;
+    margin-left: 35px;
+    border:none;
+  border-bottom: 2px solid #333;
+  outline:none;
+  resize: none;
+}
+form select{
+  border-radius: 20px;
+    width: 186px;
+    margin-top: 13px;
+    height: 21px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    margin-left: 35px;
+}
+form label{
+  font-weight: bold;
+}
+
+.button-form{
+  font-size: 17px;
+    font-weight: 600;
+    background: #EB984E;
+    height: 29px;
+    width: 120px;
+}
+/* ----------Footer----------- */
+.pied-de-page{
+  display: flex;
+  justify-content: space-around;
+  
+}
+footer{
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #E5E0E0;
+    margin-top: 51px;
+}
+.list-address{
+  display: flex;
+  flex-direction: column;
+}
+.address{
+  text-decoration: none;
+  color: white;
+  margin-bottom: 20px;
+}
+.address:hover{
+  color: burlywood;
+  text-decoration: underline;
+}
+.copyright{
+  text-align: center;
+  padding-bottom: 18px;
+}
+
+
+.contactForm .inputBox{
+  position: relative;
+  width: 100%;
+ 
+}
+
+.inputBox-submit{
+  color:  white;
+ 
+  cursor: pointer;
+}
+.icon-address{
+  color: rgb(128,128,128);
+  padding-right: 12px;
+}
+
+.contactForm .inputBox input, .inputBox textarea {
+    
+  background-color: rgba(0, 0, 0, 0.9);
+  margin:10px 0;
+  border:none;
+  border-bottom: 2px solid white;
+  outline:none;
+  resize: none;
+  color: white;
+} 
+.contactForm .inputBox span{
+    position: absolute;
+    left:0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin:10px 0;
+    pointer-events: none;
+    transition: 0,5s;
+    color:#666
+}
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox input:valid~span,
+.contactForm .inputBox textarea:focus~span,
+.contactForm .inputBox input:valid~span
+{
+    color:#73C6B6;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.titre-form{
+  
+  color: #EB984E;
+}
+/* -----------Offres---------------- */
+.offres {
+  margin: 10px 132px;
+    text-align: center;
+    line-height: 25px;
+  
+
+}
+.offres span{
+  color: red;
+}
+/* --------Table----------- */
+table, td, th {
+  margin-left: 204px;
+padding-left: 36px;
+}
+table{
+  background: #fff;
+  box-shadow: 0px 4px 11px 10px rgba(0, 0, 0,.1);
+  border-radius: 30px;
+  box-sizing: border-box;
+}
